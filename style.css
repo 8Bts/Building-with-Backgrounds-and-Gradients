@@ -3,3 +3,30 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url(./images/background-img.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% 33.6rem;
+}
+
+/* ================================================= Nav Bar ============================================================*/
+
+nav {
+  border: 1px solid;
+  margin: 5.3rem 11.6rem;
+}
+
+nav li {
+  display: inline-block;
+  background: rgb(77,77,77);
+  background: linear-gradient(180deg, rgba(77,77,77,1) 50%, rgba(141,141,141,1) 100%);
+  width: 6.625rem;
+  height: 2.1875rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.84em;
+  color: rgb(238, 238, 238);
+  padding: 1rem 2rem;
+  border-right: 1px solid ;
+}
