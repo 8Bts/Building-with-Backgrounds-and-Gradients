@@ -14,18 +14,24 @@ body {
 /* ================================================= Nav Bar ============================================================*/
 
 nav {
-  margin: 5.3rem auto;
+  margin: 5.3rem auto 1.5rem auto;
   width: 980px;
 }
 
-.nav-link {
+.nav-div {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.nav-link {
   text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.8em;
   color: rgb(247, 247, 247);
 }
+
 .nav-span {
   display: block;
   background: rgba(104,104,104,1);
@@ -55,6 +61,11 @@ nav {
   border-bottom-right-radius: 5px;
 }
 
+.s-box:hover {
+  background: rgba(104,104,104,1);
+  background: linear-gradient(to bottom, rgba(104,104,104,1) 0%, rgba(115,115,115,1) 5%, rgba(94,94,94,1) 49%, rgba(94,94,94,1) 49%, rgba(112,112,112,1) 49%, rgba(141,141,141,1) 100%);
+}
+
 .nav-head {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -63,7 +74,7 @@ nav {
 .search-span {
   display: inline-block;
   position: relative;
-  top: -18%;
+  top: -25%;
 }
 
 .s-input {
@@ -75,9 +86,62 @@ nav {
   box-shadow: inset  0px 5px 0px -3px rgba(47,47,47,1);
 }
 
+.s-input:focus {
+  background-color: white;
+}
+
 .i-s {
+  color: white;
   position: absolute;
   left: 8%;
   top: 25%;
   font-size: 11px;
+}
+
+/* =========================================== Main section ============================================ */
+
+.section-div {
+  margin: 0 17.6rem;
+  text-align: center;
+  line-height: 1.7;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.section-div > a {
+  color: rgba(255, 255, 255, 0.863);
+  text-decoration: none;
+}
+
+.section-h1 {
+  font-size: 3.8rem;
+  font-weight: 200;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+.section-p1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.863);
+  line-height: 1.2;
+}
+
+.section-p2 {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.section-p2:hover {
+  text-decoration: underline;
+}
+
+.play-i {
+  position: relative;
+  top: 3px;
+  margin-left: 0.3rem;
+  font-size: 1.8rem;
 }
