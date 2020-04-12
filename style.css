@@ -14,7 +14,6 @@ body {
 /* ================================================= Nav Bar ============================================================*/
 
 nav {
-  border: 1px solid;
   margin: 5.3rem auto;
   width: 980px;
 }
@@ -24,41 +23,61 @@ nav {
   flex-flow: row nowrap;
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  font-size: 0.84em;
-  color: rgb(238, 238, 238);
+  font-size: 0.8em;
+  color: rgb(247, 247, 247);
 }
 .nav-span {
   display: block;
-  background: rgb(77,77,77);
-  background: linear-gradient(180deg, rgba(77,77,77,1) 50%, rgba(141,141,141,1) 100%);
+  background: rgba(104,104,104,1);
+  background: linear-gradient(to bottom, rgba(104,104,104,1) 0%, rgba(115,115,115,1) 5%, rgba(94,94,94,1) 49%, rgba(94,94,94,1) 49%, rgba(112,112,112,1) 49%, rgba(141,141,141,1) 100%);
   width: 6.625rem;
   height: 2.1875rem;
-  border-right: 1px solid rgb(77,77,77);
+  border: 1px solid #646464;
+  border-left: 1px outset #808080;
   text-align: center;
   padding: 9px;
 }
 
+.nav-span:hover {
+  background: rgba(78,78,78,1);
+  background: linear-gradient(to bottom, rgba(78,78,78,1) 0%, rgba(73,73,73,1) 5%, rgba(57,57,57,1) 49%, rgba(67,67,67,1) 49%, rgba(96,96,96,1) 100%);
+}
+
+.logo-icon {
+  font-size: 22px;
+  position: relative;
+  top: -3px;
+}
+
 .s-box {
   width: 136px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-head {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .search-span {
   display: inline-block;
   position: relative;
-  top: -10%;
+  top: -18%;
 }
 
 .s-input {
   background-color: inherit;
+  border: 1px inset rgba(238, 238, 238, 0.342);
   border-radius: 12px;
-  width: 6.6rem;
-  box-shadow: 2px;
+  width: 6.7rem;
+  padding: 2px 0;
+  box-shadow: inset  0px 5px 0px -3px rgba(47,47,47,1);
 }
 
 .i-s {
   position: absolute;
   left: 8%;
-  top: 22%;
+  top: 25%;
   font-size: 11px;
-  box-shadow: inset 0 0 -1px -1px black;
 }
