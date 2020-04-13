@@ -7,7 +7,7 @@
 .background-div {
   background: url(./images/background-img.jpg) no-repeat;
   background-size: cover;
-  width: 100%;
+  min-width: 1350px;
   height: 538px;
   border: 1px solid transparent;
 }
@@ -25,12 +25,10 @@ nav {
 }
 
 .nav-link {
-  text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.8em;
-  color: rgb(247, 247, 247);
 }
 
 .nav-span {
@@ -42,6 +40,14 @@ nav {
   border: 1px solid #646464;
   border-left: 1px outset #808080;
   text-align: center;
+}
+
+.nav-span>a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(247, 247, 247);
   padding: 9px;
 }
 
@@ -60,6 +66,7 @@ nav {
   width: 136px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 9px;
 }
 
 .s-box:hover {
@@ -114,26 +121,29 @@ nav {
 }
 
 .section-h1 {
-  font-size: 3.8rem;
+  font-size: 60.8px;
   font-weight: 200;
   letter-spacing: 0;
   color: #fff;
+  word-spacing: nowrap;
 }
 
 .section-p1 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2.1rem;
+  font-size: 33.6px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.863);
   line-height: 1.2;
+  word-spacing: nowrap;
 }
 
 .section-p2 {
   display: inline-block;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.6rem;
+  font-size: 25.6px;
   margin-top: 1.2rem;
   color: rgba(255, 255, 255, 0.863);
+  word-spacing: nowrap;
 }
 
 .section-p2:hover {
@@ -144,27 +154,33 @@ nav {
   position: relative;
   top: 3px;
   margin-left: 0.3rem;
-  font-size: 1.8rem;
+  font-size: 28.8px;
 }
 
 /* ============================================== Main section ======================================== */
 
-.promo-grid-cont {
-  display: grid;
-  grid-template-columns: repeat(4, 336px);
-  grid-template-rows: 202px;
-  column-gap: 2px;
+.promo-float-cont {
   margin-top: 2px;
+  min-width: 1348px;
+  overflow: auto;
+}
+
+.img-link {
+  text-decoration: none;
+  float: left;
 }
 
 img[src^="./images/promo"] {
   width: 334px;
   height: 202px;
+  margin-left: 3px;
 }
+
 
 /* =============================================== Footer ================================================ */
 
 .footer-div {
+  clear: left;
   width: 983px;
   margin: 20px auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
