@@ -13,7 +13,7 @@ This project is client side clone of old <a href="https://web.archive.org/web/20
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/8Bts/Building-with-Backgrounds-and-Gradients/80e7dc30b94c55f277ce1592f3a332654e4f37f7/index.html" target="_blank">Live version</a>
+<a href="https://github.com/8Bts/Building-with-Backgrounds-and-Gradients/blob/apple-home/index.html" target="_blank">Live version</a>
 
 ## Author
 
